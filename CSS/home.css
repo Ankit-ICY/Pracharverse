@@ -1,0 +1,487 @@
+
+
+body{
+	width: 100vw;
+	display: block;
+	overflow-x: hidden;
+    color: #c4c3ca;
+	font-family: 'Muli', sans-serif;
+
+}
+
+.overlay{
+
+    position: absolute;
+    z-index: 2;
+    width: 83%;
+    height: 100px;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    margin-left: 8.3%;
+    /* background-color: rgba(0,0,0,0.2); */
+    /* background-color: rgb(22, 22, 19); */
+
+
+}
+
+.overlay:hover{
+    /* background-color: red; */
+    background-color: hsl(260 97% 61% / 0.75); 
+    mix-blend-mode: overlay; 
+}
+
+.over-vid{
+
+    margin-top: 28%;
+    width: 100%;
+    /* background-color: red; */
+    /* display: flex;
+    flex-direction: column;
+    text-align: right; */
+}
+
+.over-vid h1{
+    text-shadow: 2px 2px 8px #abb8be;  
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 4%;
+    font-size: 60px;
+
+}
+
+.over-vid-comp{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    float: right;
+}
+
+
+
+.back-body1{
+    background-attachment: fixed;
+}
+
+.container1{
+
+    position: relative; 
+  color: #fff;
+  width: 100%;
+  transition: top 0.3s;
+
+  
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+.container1 img{
+    margin-left: 2%;
+
+}
+
+.start-box{
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 18%;
+    padding-left: 45px;
+    margin-left: 2.5%;
+}
+.start-box h1{
+    margin-bottom: 4%;
+    font-size: 45px;
+    text-shadow: 2px 2px 10px #000000;
+    text-shadow: 2px 2px 8px #abb8be;  
+
+}
+
+.head-content{
+
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+
+}
+.head-content img{
+    height: 100%;
+    width: 45%;
+    /* margin-right: 70px; */
+    object-fit: cover;
+    background-position: center;
+    margin-top: 3%;
+    
+
+}
+
+.start-box p
+{
+    width: 85%;
+text-shadow: 2px 2px 8px #abb8be;  
+
+}
+
+
+.back-body2{
+
+    background-attachment: fixed;
+}
+
+.video_div{
+
+
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;    
+    }
+    
+    
+    video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height:80vh;
+    background-position: center;
+    box-shadow : rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    /* opacity: 0.9; */
+    }
+    
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+    }
+    
+    body {
+        background: #080808;
+        background:  rgb(22, 22, 19);
+
+        color: #fff;
+    
+    }
+    
+    #header {
+        width: 100%;
+        height: 100vh;
+        background-image: url("Collections/pexels-daniel-putzer-633409.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        image-rendering: smooth;
+        background-position: center;
+        backface-visibility: hidden; /* Additional suggestion */
+        transform: translate3d(0, 0, 0); /* Additional suggestion */   
+        
+    }
+    
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+
+    
+    .logo {
+        width: 100px;
+        /* margin-right: 200px; */
+        height: 100px;
+    
+    }
+
+   
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 25px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+        
+    }
+    
+    nav ul li a::after {
+        content: '';
+        width: 0px;
+        height: 3px;
+        background:  hsl(260 97% 61% / 0.75);
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    .header-text {
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    
+    .header-text h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    
+    .header-text h1 span {
+        color: #ff004f;
+    }
+    
+    
+    nav .fas {
+        display: none;
+    }
+    
+    /* ----------ABOUT---------- */
+    #about {
+        padding: 80px 0px;
+        color: #ababab;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .about-col-1 {
+        flex-basis: 35%;
+    }
+    
+    .about-col-1 img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .about-col-2 {
+        flex-basis: 60%;
+    }
+    
+    .sub-title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .tab-titles {
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    
+    .tab-links {
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .tab-links::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    
+    .tab-links.active-link::after {
+        width: 50%;
+    }
+    
+    .tab-contents ul li {
+        list-style: none;
+        margin: 10px 0;
+    }
+    
+    .tab-contents ul li span {
+        color: #b54768;
+        font-size: 14px;
+    }
+    
+    .tab-contents {
+        display: none;
+    }
+    
+    .tab-contents.active-tab {
+        display: block;
+    }
+    
+    /* ----------SERVICES---------- */
+    #services {
+        padding: 30px 0;
+    }
+    
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        /* width: 40vw
+        ; */
+        /* background-color: RED; */
+    }
+    
+    .services-list div {
+        background: #262626;
+        padding: 40px;
+        font-size: 15px;
+        line-height: 30 px;
+        font-weight: 300;
+        border-radius: 10px;
+        
+        transition: background 0.5s, transform 0.5s;
+    }
+    
+    .services-list div i {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .services-list div h2 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .services-list div a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    
+    .services-list div:hover {
+        background: #ff004f;
+        transform: translateY(-10px);
+    }
+    
+    
+    
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+ 
+    
+    
+    
+    /* ----------CSS FOR SMALL SCREEN---------- */
+    @media only screen and (max-width: 600px) {
+        #header {
+            background-image: url(images/phone-background.png);
+        }
+    
+        .header-text {
+            margin-top: 100%;
+            font-size: 16px;
+        }
+    
+        .header-text h1 {
+            font-size: 30px;
+        }
+    
+        nav .fas {
+            display: block;
+            font-size: 25px;
+        }
+    
+        nav ul {
+            background: #b54768;
+            position: fixed;
+            top: 0;
+            width: 200;
+            right: 0;
+            height: 100vh;
+            padding-top: 50px;
+        }
+    
+        nav ul li {
+            display: block;
+            margin: 25px;
+        }
+    
+    }
+    
+    
+    /* ----------CSS FOR SMALL SCREEN---------- */
+    @media only screen and (max-width: 600px) {
+    
+        /* Adjust the header image and text size for small screens */
+        #header {
+            background-image: url(images/phone-background.png);
+        }
+    
+        .header-text {
+            margin-top: 100%;
+            font-size: 16px;
+        }
+    
+        .header-text h1 {
+            font-size: 30px;
+        }
+    
+        /* Show the navigation menu on small screens */
+        nav ul {
+            display: none;
+        }
+    
+        nav .fas {
+            display: block;
+            font-size: 25px;
+        }
+    
+        nav ul {
+            background: #b54768;
+            position: fixed;
+            top: 0;
+            width: 200px;
+            /* Increased the width to accommodate the menu items */
+            right: 0;
+            height: 100vh;
+            padding-top: 50px;
+            transform: translateX(200px);
+            /* Off-canvas menu, initially hidden */
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        nav ul.show {
+            transform: translateX(0);
+            /* Show the menu when 'show' class is applied */
+        }
+    
+        nav ul li {
+            display: block;
+            margin: 25px;
+        }
+    }
+    
+    
