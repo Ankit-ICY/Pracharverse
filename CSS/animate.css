@@ -18,10 +18,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* background: #131c28; */
   color: white;
   font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
 }
 
 .ball {
@@ -29,7 +27,7 @@ body {
   height: var(--size);
   width: var(--size);
   position: absolute;
-  bottom: 50%;
+  bottom: 10%;
   left: calc(50% - var(--size) / 2);
   display: none;
   -webkit-animation: bounce var(--interval) calc(var(--interval) / -2) cubic-bezier(0, 0, 0, 1) infinite, color var(--duration) calc(var(--interval) / -2) linear infinite;
@@ -109,6 +107,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+
 }
 .ball-top:before {
   content: "";
@@ -145,15 +145,19 @@ body {
 }
 
 .phrase {
-  font-size: 10vmin;
+  font-size: 8vmin;
   text-align: center;
   position: absolute;
-  bottom: 50%;
+  bottom: 20%;
+
   left: 0;
   right: 0;
   display: grid;
   grid-template-areas: "layer";
   opacity: 0;
+  
+
+
 }
 .phrase.splitting {
   opacity: 1;
