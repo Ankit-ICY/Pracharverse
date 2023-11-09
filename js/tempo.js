@@ -13,7 +13,7 @@ let interval = 4000
 // Function to slide forward
 const slide = (condition) => {
     // CLear interval
-    clearInterval(start)
+    // clearInterval(start)
     // update value and trailValue
     condition === "increase" ? initiateINC() : initiateDEC()
     // move slide
@@ -21,7 +21,7 @@ const slide = (condition) => {
     // Restart Animation
     animate()
     // start interal for slides back 
-    start = setInterval(() => slide("increase"), interval);
+    // start = setInterval(() => slide("increase"), interval);
 }
 
 // function for increase(forward, next) configuration
@@ -77,7 +77,7 @@ const trailUpdate = () => {
 }   
 
 // Start interval for slides
-let start = setInterval(() => slide("increase"), interval)
+// let start = setInterval(() => slide("increase"), interval)
 
 // Next  and  Previous button function (SVG icon with different classes)
 document.querySelectorAll("svg").forEach(cur => {
@@ -88,7 +88,7 @@ document.querySelectorAll("svg").forEach(cur => {
 // function to slide when trail is clicked
 const clickCheck = (e) => {
     // CLear interval
-    clearInterval(start)
+    // clearInterval(start)
     // remove active class from all trails
     trail.forEach(cur => cur.classList.remove("active"))
     // Get selected trail
@@ -115,7 +115,7 @@ const clickCheck = (e) => {
     // start animation
     animate()
     // start interval
-    start = setInterval(() => slide("increase"), interval)
+    // start = setInterval(() => slide("increase"), interval)   
 }
 
 // Add function to all trails
