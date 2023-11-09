@@ -1,9 +1,9 @@
 .content_box{
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
-   
     align-items: center ;
+
 }
 
 
@@ -31,14 +31,70 @@
 
 }
 
+
+.buss_text{
+    margin-left: 100px;
+    width:40% ;
+    height: 100%;
+    margin-top: 12%;
+    margin-right: 50px;
+
+}
+
+.buss_text h3{
+    /* color: #e8e5e5; */
+    font-weight: bold;
+
+}
+
+
+.buss_text-p{
+    margin-top  : 60px ;
+    font-size: 14px;
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.cont_count{
+    margin-top  : 90px ;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.cont_count h1{
+    font-weight: bold;
+    /* color: aliceblue; */
+    /* background-color: bl; */
+
+} 
+
+.cont_count p{
+    color : #ff004f;
+    margin-left: 50px;
+    font-size: 13px;
+
+    /* background-color: green; */
+} 
+
+
+
+
+
 @media screen and (max-width: 768px),(max-width: 900px) {
     .content_box{
 
         height: 100%;
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        /* background-color: red; */
+        justify-content: center;
+        align-items: center;
+
+
+
     }
 
     .buss_image img{
@@ -46,15 +102,22 @@
     }
 
     .buss_text{
-        width: 100%;
+        width: 90%;
         height: 100%;
+        margin-right: 20%;
+
 
     }
     .buss_text-p{
         width: 100%;
+
         height: 100%;
     }
   
+    .buss_text h3{
+
+        margin-left: 20%;
+    }
     .cont_count{
 
         display: flex;
@@ -73,54 +136,5 @@
   
   }
 
-
-.buss_text{
-    margin-left: 100px;
-    width:40% ;
-    height: 100%;
-    margin-top: 12%;
-    margin-right: 50px;
-
-}
-
-.buss_text h3{
-    color: #5c5c5c;
-    font-weight: bold;
-
-}
-
-
-.buss_text-p{
-    margin-top  : 60px ;
-    font-size: 13px;
-    color: aliceblue;
-    color: rgb(139, 144, 148);
-
-    font-family:'Open Sans', sans-serif;
-    
-}
-
-.cont_count{
-    margin-top  : 90px ;
-    display: flex;
-    gap: 50px;
-    width: 100%;
-    /* background-color: red; */
-}
-
-.cont_count h1{
-    font-weight: bold;
-    color: aliceblue;
-    /* background-color: bl; */
-
-} 
-
-.cont_count p{
-    color : #ff004f;
-    margin-left: 50px;
-    font-size: 13px;
-
-    /* background-color: green; */
-} 
 
 
