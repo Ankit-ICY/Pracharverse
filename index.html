@@ -13,19 +13,126 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <script src="contactPage.js"></script> -->
     <link rel="stylesheet" href="CSS/animate.css">
     <link rel="stylesheet" href="CSS/aura.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/contactPage.css">
     <link rel="stylesheet" href="CSS/content.css">
-    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/sparkle.css">
     <link rel="stylesheet" href="CSS/slider.css">
-    <link rel="stylesheet" href="CSS/slider2.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+
+    <style>
+        #themeSwitcher {
+            border: none;
+        }
+
+    </style>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Poppins', sans-serif;
+    }
+
+    .head-div{
+        width: 50%;
+        height: 100%;
+    }
+
+    .pracharverse{
+        height: 100%;
+        width: 100%;
+        margin-left: 4%;
+  
+       
+    }
+
+    .p_text{
+        width: 90%;
+        margin-left: 4%;
+        font-size: 14px;
+        text-align: justify;
+        
+    }
+
+
+
+    .welcome-text{
+        margin-right: 67%;
+    }
+
+    h2{
+        position: relative;
+        font-size: 6vw;
+        color: transparent;
+        -webkit-text-stroke: 0.3vw #383d52;
+
+       
+    }
+    h2::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right,rgb(0,234,255), rgb(0,138,255) , rgb(234,0,255)); /* Replace with your desired gradient colors */
+
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+
+
+        height: 100%;
+        -webkit-text-stroke: 0vw #383d52;
+
+        overflow: hidden;
+        animation: animate 6s linear ;
+
+    }
+
+    .heady{
+        display: flex;
+    }
+
+    @keyframes animate{
+        
+        0%, 10%,100%{
+            width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+
+
+    .head-content{
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+        box-shadow : rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    backdrop-filter: blur(5px); 
+        
+    }
 
     
+    .optimize-text{
+        height: 20%;
+    }
 
+
+</style>
 
 </head>
 
@@ -35,16 +142,16 @@
     <div class="back-body2" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-01.png');">
   
 
-    <div id="header"  >
-        <div class="container1">
-            <nav>
+    <div id="header" style="height: 100vh" >
+        <div class="container1" >
+            <nav  >
                 <img src="collections\img\pracharrverse_logo.png    " class="logo" id="nev_items"></img>
                 <ul>
-                    <li><a href="#" id="nev_items">Home</a></li>
-                    <li><a href="#" id="nev_items">About</a></li>
-                    <li><a href="#" id="nev_items">Services</a></li>
-                    <li><a href="#" id="nev_items">Portfolio</a></li>
-                    <li><a href="#" id="nev_items">Contact</a></li>
+                    <li><a href="" id="nev_items">Home</a></li>
+                    <li><a href="#about_div" id="nev_items">About</a></li>
+                    <li><a href="#service_div" id="nev_items">Services</a></li>
+                    <li><a href="#port_div" id="nev_items">Portfolio</a></li>
+                    <li><a href="#contact_div" id="nev_items">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
 
@@ -52,9 +159,7 @@
 
 
 
-                <!-- <i class="fa-regular fa-moon fa-beat-fade" id="Theam"></i> -->
-
-                
+                                
                 <svg class="toggle-scene" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMinYMin" viewBox="0 0 197.451 481.081" >
                     <defs>
                       <clippath id="g" clippathunits="userSpaceOnUse">
@@ -85,6 +190,8 @@
                       <circle class="bulb__flash" cx="-745.343" cy="743.939" r="83.725" fill="none" stroke-dasharray="10,30" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></circle>
                       <path class="bulb__shine" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M-789.19 757.501a45.897 45.897 0 013.915-36.189 45.897 45.897 0 0129.031-21.957"></path>
                     </g>
+
+                    
                   </svg>
 
                 
@@ -92,24 +199,47 @@
 
                     <div class="sparkle-button" >
 
-                            <button class="spa-but">
+                            <button class="spa-but" >
                             <span class="text" >Book a Demo</span>
                             </button>
                             <div class="bodydrop"></div>
                     </div>
-                
             </nav>
+
             
         </div>
+
+
+        <div class="heady">
+
+        <div class="head-div" style="margin-top: 10%;"> 
+            
+            <div class="pracharverse">
+            <span style="font-size: 30px;"class="welcome-text" >Welcome To</span>
+            <h2 data-text="Pracharverse...">Pracharverse...</h2> 
         
-        <div class="head-content">
-            <div class="start-box">
-                   <div class="optimize-text" style="display: flex; margin-right: 8%; margin-bottom: 27%;" >
-                        <h1 >We</h1> 
-                        <h1 style=" margin-left: 5%;">Optimize</h1> 
-                        <h1 style="margin-left: 5% ">for </h1>
+            </div>
+
+
+                
+        <div class="p_text"> 
+            <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
+                <a class="g-but" href="#">
+                    <span class="g-but-text"> Book a Demo </span>
+                    
+                </a>
+            </div>  
+
+
+        </div>
+        
+
+        
+        <div class="head-content" >
+                   <div class="optimize-text"  >
+                        <h1 style="text-shadow: 2px 4px 20px rgb(0,234,255)" >We Optimize For</h1> 
                     </div>
-                    <div class="ball" data-splitting  style="margin-top: 700px;">
+                    <div class="ball" data-splitting  >
                         <div class="ball-top"></div>
                     </div>
                     
@@ -119,35 +249,14 @@
                         <span class="word slide" data-splitting="chars" style="color: rgb(234,0,255);" >Ads</span>
                         <span class="word slide" data-splitting="chars" style="text-decoration: underline; text-transform: uppercase;">Pracharverse</span>
                     </div>
-                <div class="p_text"> 
-                <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
-                    <div class="sparkle-button" >
-
-                        <button class="spa-but"  id="p-but">
-                        <span class="text" >Book a Demo</span>
-                        </button>
-                        <div class="bodydrop"></div>
-                    </div>
-                </div>  
-
-
-
-
-
-        </div>
+                    
 
         </div>
 
 
 
-        <div style="height: 100vh;">
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; " >
-                <h1  class="sub-title" style="color :gray; font-family: 'Playfair Display', serif;" >Our Services</h1>
-                <p style="color :gray; font-family: 'Playfair Display', serif; text-align: center; width: 70%; margin-top: 2%; font-size: 18px;">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores blanditiis incidunt architecto tenetur magni dolore similique non, atque hic aspernatur explicabo repudiandae cumque error in! Aperiam illum ducimus explicabo vitae."</p>
-            </div>
-            <iframe src="tempo.html" style="height: 100%; width: 100%; overflow: hidden;  "></iframe>
-        
-        </div>
+       </div>
+      
    
     </div >
 
@@ -157,7 +266,7 @@
     
     <!-- -----------------SLIDER--------------- -->
     
-    <div style="height: 100%; " class="slid-vid">
+    <div style="height: 100%;" class="slid-vid">
     <div class="marquee" style="margin-top: 100px; " > 
         <ul class="marquee-content">
           <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
@@ -219,8 +328,8 @@
 
     <!-- -----------------SLIDER--------------- -->
 
-    <div class="marquee2"  >
-        <ul class="marquee2-content">
+    <div class="marquee"  >
+        <ul class="marquee-content">
           <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
           <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
           <li><i class="fa fa-address-book-o" aria-hidden="true"></i></li>
@@ -234,8 +343,6 @@
         </ul>
       </div>
 
-      
-
     
     </div>
 
@@ -246,13 +353,13 @@
 
     
 
-    <!-- <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 100px;" ><h1  class="sub-title" style="color :gray; font-family: 'Playfair Display', serif;" >Our Services</h1>
-    <p style="color :gray; font-family: 'Playfair Display', serif; text-align: center; width: 70%; margin-top: 2%; font-size: 18px;">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores blanditiis incidunt architecto tenetur magni dolore similique non, atque hic aspernatur explicabo repudiandae cumque error in! Aperiam illum ducimus explicabo vitae."</p>
+    <div  id="service_div" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 100px;" >
+        <h1  class="sub-title" style="font-family: 'Playfair Display', serif; " >Our Services</h1>
+    <p class="service-text" style="font-family: 'Playfair Display', serif; text-align: center; width: 70%;">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores blanditiis incidunt architecto tenetur magni dolore similique non, atque hic aspernatur explicabo repudiandae cumque error in! Aperiam illum ducimus explicabo vitae."</p>
     </div>
 
-    <iframe src="tempo.html" style="height: 100vh; width: 100%; overflow: hidden; "></iframe> -->
+    <iframe src="tempo.html" style="height: 100vh; width: 100%; overflow: hidden; "></iframe>
 
-   
 
 
 
@@ -261,7 +368,7 @@
 
     
         <!-- ---------------------CONTENT------------------ -->
-        <div class="content_box"  >
+        <div class="content_box"  id="about_div" >
             <div class="buss_image">
                 <img src="collections\img\temoImg.png"  />
             </div>
@@ -289,16 +396,19 @@
         </div>
     
 
-    
+     
 
 
-    <iframe src="Carousel.html" style="height: 100vh; width: 100%; overflow: hidden;"></iframe>
-
-    <iframe src="portfolio.html" style="height: 100vh; width: 100%; overflow: hidden;"></iframe>
+    <iframe src="Carousel.html" style="height: 100vh; width: 100%; overflow: hidden; "  id="case_div"></iframe>
 
 
 
-    <div>
+
+    <iframe src="portfolio.html" style="height: 100vh; width: 100%; overflow: hidden;" id="port_div"></iframe>
+
+
+
+    <div id="contact_div">
         <section class="contact" id="contact">
         <div class="container">
             <div class="heading text-center">
@@ -369,7 +479,7 @@
     
     
     
-        <div style="height : 100%;"> 
+        <div style="height : 100%;" id="foot_div"> 
             <footer class="footer-section" style="height:100%;">
                 <div class="container">
                     <div class="footer-cta pt-5 pb-5">
@@ -407,9 +517,7 @@
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 mb-50">
                                 <div class="footer-widget">
-                                    <!-- <div class="footer-logo">
-                                        <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                                    </div> -->
+                               
                                     <div class="footer-text">
                                         <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."</p>
                                     </div>
@@ -462,7 +570,9 @@
         
         
         
-        
+
+
+
 
     </div>
     </div>
@@ -482,20 +592,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDts9C9iWNF83ExezBXJLIJ0g2dwoERg08&callback=initMap"
         async defer></script>
         <script  src="js/script.js"></script>
-        <script src="carousel.js"></script>
-        <script src="js/slider2.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/slider2.js"></script>
+
          <script type="module" src="js/animate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         <script src="js/index.js"></script>
 
-
         
-<!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-<script src='https://assets.codepen.io/16327/MorphSVGPlugin3.min.js'></script>
-<script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script><script  src="js/bulb.js"></script> -->
-
 
     <script>
 
@@ -508,12 +613,12 @@
                  const body = document.body;
                  const nev_items=document.querySelectorAll("nav ul li a");
                  if (isNightTheme) {
-                     body.style.backgroundColor = 'rgba(83, 44, 160, 0.5) '; // Day theme background color
-                     body.style.color = 'white'; // Day theme text color
+                     body.style.backgroundColor = 'white'; // Day theme background color
+                     body.style.color = 'black'; // Day theme text color
                      body.style.transition='background-color 0.5s, color 0.5s';
                      moonIcon.style.color = '#f1c40f'; // Icon color
                      nev_items.forEach((e)=>{
-                         e.style.color='white';
+                         e.style.color='black';
                      });
                      
                  } else {
@@ -527,10 +632,25 @@
                  }
                  isNightTheme = !isNightTheme;
              });
+
+                   
      
     </script>
+
+
+<script>
+
+document.querySelector('a[href="#port_div"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default behavior of jumping to the anchor link
+    document.querySelector('#port_div').scrollIntoView({
+      behavior: 'smooth' // Add smooth scrolling behavior
+    });
+  });
+</script>
 
 
 </body>
 
 </html>
+
+
