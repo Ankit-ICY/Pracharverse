@@ -6,6 +6,26 @@
   box-sizing: inherit;
 }
 
+
+.service-img{
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  background-position: center;
+  margin-left: 10%;
+  border-radius: 15px;
+
+}
+
+@media screen and (max-width: 800px) {
+  
+.service-img{
+
+  margin-left: 0%;
+
+}
+}
+
 html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -68,7 +88,8 @@ body {
 }
 .slider .box .bg {
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color:  rgb(10,0,30); */
+  /* background-image: linear-gradient(rgb(0,234,255), rgb(0,138,255) , rgb(234,0,255)); */
   width: 55%;
   transform: skewX(7deg);
   position: absolute;
@@ -129,13 +150,18 @@ body {
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  color: rgb(110, 107, 107);
 }
 .slider .box .details p {
   display: inline-block;
   font-size: 1.3rem;
-  color: #B5B4B4;
+  /* color: #B5B4B4; */
   margin-bottom: 2rem;
   margin-right: 5rem;
+  color: rgb(110, 107, 107);
+
+
+
 }
 @media only screen and (max-width: 800px) {
   .slider .box .details p {
@@ -159,7 +185,7 @@ body {
   border: none;
 }
 .slider .box1 {
-  background-color: #500033;
+  /* background-color: #500033; */
 }
 .slider .box1 .illustration .inner {
   background-color: #FF0077;
@@ -171,7 +197,7 @@ body {
   background-color: #FF0077;
 }
 .slider .box2 {
-  background-color: #000050;
+  /* background-color: #000050; */
 }
 .slider .box2 .illustration .inner {
   background-color: #0033FF;
@@ -183,7 +209,7 @@ body {
   background-color: #0033FF;
 }
 .slider .box3 {
-  background-color: #00501D;
+  /* background-color: #00501D; */
 }
 .slider .box3 .illustration .inner {
   background-color: #00FF44;
@@ -195,7 +221,7 @@ body {
   background-color: #00FF44;
 }
 .slider .box4 {
-  background-color: #554D00;
+  /* background-color: #554D00; */
 }
 .slider .box4 .illustration .inner {
   background-color: #FF4E00;
@@ -207,7 +233,7 @@ body {
   background-color: #FF4E00;
 }
 .slider .box5 {
-  background-color: #300050;
+  /* background-color: #300050; */
 }
 .slider .box5 .illustration .inner {
   background-color: #8000FF;
