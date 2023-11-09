@@ -33,3 +33,5 @@ let nev_items=document.querySelector("#nev_items");
         document.querySelector('.fas.fa-times').addEventListener('click', function () {
             document.querySelector('nav ul').classList.remove('show');
         });
+
+
