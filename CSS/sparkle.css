@@ -11,10 +11,15 @@
 .sparkle-button {
 	position: relative;
 	/* background-color: blue; */
-	width: 9%;	
+	width: 8%;	
 	height: 90%;
 	margin-right: 6%;
 }
+
+
+
+
+
 
 .spa-but {
 	--cut: 0.1em;
@@ -74,6 +79,8 @@
 .spa-but:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
 	--active: 1;
 	--play-state: runnin;
+	
+	
 }
 
 .bodydrop {
@@ -85,6 +92,7 @@
 	position: fixed;
 	inset: 0;
 	z-index: -1
+
 	
 }
 
@@ -111,3 +119,38 @@
 	inline-size: 1.25em;
 	translate: -25% -5%;
 }
+
+
+
+    
+@media screen and (max-width:600px){
+        
+
+	.sparkle-button{
+		width: 15%;
+	}
+
+	.text{
+		font-size: 43%;
+	}
+	
+		
+	}
+	
+
+@media screen and (min-width:600px) and (max-width : 1000px )  { 
+	.sparkle-button{
+		width: 9%;
+	}
+
+	.text{
+		font-size: 6px;
+	}
+
+	
+	}
+	
+
+	
+
+		
