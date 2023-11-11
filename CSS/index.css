@@ -524,7 +524,7 @@ body{
     filter: hue-rotate(110deg);
 }
 .g-but-text{
-    color: rgb(67, 65, 65);
+    /* color: rgb(67, 65, 65); */
 }
 
 
