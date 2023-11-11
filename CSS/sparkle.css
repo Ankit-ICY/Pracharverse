@@ -109,7 +109,7 @@
 
 .text {
 
-	font-size: small;
+	font-size: 70%;
 	font-weight: bold;
 	color: white;
 	letter-spacing: 0.01ch;	
@@ -127,15 +127,17 @@
         
 
 	.sparkle-button{
-		width: 15%;
+		width: 16%;
 	}
 
 	.text{
-		font-size: 43%;
+		font-size: 42%;
 	}
 	
 		
 	}
+
+
 	
 
 @media screen and (min-width:600px) and (max-width : 1000px )  { 
