@@ -27,7 +27,7 @@ body {
   height: var(--size);
   width: var(--size);
   position: absolute;
-  bottom: 10%;
+  bottom: 40%;
   left: calc(50% - var(--size) / 2);
   display: none;
   -webkit-animation: bounce var(--interval) calc(var(--interval) / -2) cubic-bezier(0, 0, 0, 1) infinite, color var(--duration) calc(var(--interval) / -2) linear infinite;
@@ -148,7 +148,7 @@ body {
   font-size: 8vmin;
   text-align: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
 
   left: 0;
   right: 0;
