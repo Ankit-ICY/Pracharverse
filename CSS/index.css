@@ -152,7 +152,7 @@ body{
 .video_div{
 
 
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     overflow: hidden;    
     }
@@ -166,27 +166,21 @@ body{
     background-position: center;
     box-shadow : rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-    /* opacity: 0.9; */
     }
     
     
     * {
         margin: 0;
         padding: 0;
-        /* font-family: 'Poppins', sans-serif; */
         box-sizing: border-box;
-        /* overflow: hidden; */
     }
     
     body {
-        /* background: #080808; */
-        /* background:  rgb(22, 22, 19); */
         overflow-x: hidden;
         scroll-behavior:smooth;
         padding: 0;
         margin: 0;
 
-        /* color: #fff; */
     
     }
     
@@ -458,7 +452,7 @@ body{
     position: relative;
     display: inline-block;
     padding: 20px 0px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
@@ -468,7 +462,7 @@ body{
     letter-spacing: 4px;
     overflow: hidden;
    border-radius: 15px;
-    width: 18%;
+    width: 13%;
    
    color:#919191;
 
@@ -532,6 +526,10 @@ body{
         
     }
 
+
+    .slid-vid{
+        background-color: black;
+    }
     
 
 
@@ -556,6 +554,7 @@ body{
 
     .slid-vid{
         margin-top: 45%;
+
     }    
 
  
