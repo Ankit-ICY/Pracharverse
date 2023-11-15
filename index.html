@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="icon" href="collections\img\pracharrverse_logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="collections\img\pracharrverse_logo.png">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <script src="contactPage.js"></script> -->
@@ -41,40 +44,35 @@
         font-family:'Poppins', sans-serif;
     }
 
-    .head-div{
-        width: 60%;
-        height: 80%;
-        /* background-color: green; */
-    }
 
     .pracharverse{
         height: 100%;
         width: 100%;
-        margin-left: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
   
        
     }
 
     .p_text{
-        width: 90%;
+        width: 70%;
         margin-left: 1%;
-        /* background-color: blue; */
         font-size: 14px;
-        text-align: justify;
+        text-align: center;
         
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1px;
     }
 
 
-
-    .welcome-text{
-        margin-right: 67%;
-    }
 
     h2{
         position: relative;
-        font-size: 6vw;
+        font-size: 7vw;
         color: transparent;
         -webkit-text-stroke: 0.3vw #383d52;
+        font-weight: bold;
 
        
     }
@@ -100,31 +98,6 @@
 
     }
 
-
-
-    #header{
-        margin-top: 5%;
-        /* background-color: red; */
-        background-color: #e2eafc;
-        width: 90%;
-        margin-left: 5%;
-        border-radius: 20px;
-        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-
-    }
-  
-    .heady{
-        width: 100%;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-
-        height: 100%;
-        display: flex;
-        border-radius:10px;
-    }
-
     @keyframes animate{
         
         0%, 10%,100%{
@@ -136,89 +109,28 @@
     }
 
 
-    .head-content{
-        /* margin-left: 10%; */
-        width: 40%;
-        /* display: flex; */
-        height: 85%;
-        justify-content: center;
-        /* background:linear-gradient(to right,rgb(0,234,255), rgb(0,138,255) , rgb(234,0,255));  */
-        border-radius: 30px;
-        /* box-shadow : rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-    /* backdrop-filter: blur(5px);  */
-        position: absolute;
-        z-index: 2;
-        /* background-color: red; */
-        margin-left: 58%;
-
- 
-    }
-
     
     .optimize-text{
         height: 20%;
     }
 
 
-    .cont{
-        position: relative;
-        width: 40%;
-        height: 90%;
-        overflow: hidden;
-    }
 
-    .bubbles{
-        display: flex;
-        position: relative;
+    .head-div{
+        width: 100%;
+        height: 80%;
+       
     }
 
 
-    .bubbles span{
-
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: #4fc4dc;
-        margin: 0 4px;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0 50px #4fc4dc,
-        0 0 100px #4fc4dc;
-        animation : animated 10s linear;
-        animation-duration: calc(40s/var(--i));
-        animation-fill-mode: forwards; 
-    }
+    @media screen and (max-width:600px){
 
 
-    .bubbles span:nth-child(even){
-        background: #ff2d75;
-
-        box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
-
-    }
-
-    @keyframes animated {
-        
-        0%{
-            transform: translateY(100vh) scale(0);
-            /* opacity: 0; */
-
+        .pracharverse_text{
+            font-size: 12vw;
         }
 
-        100%{
-            transform: translateY(-10vh) scale(1);
-            opacity: 0;
-
-        }
-
-    }
-
-
+         }
 
 </style>
 
@@ -226,12 +138,9 @@
 
 <body >
 
-    <div class="back-body1" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-0.png');">
-    <div class="back-body2" style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-01.png');">
-  
-
+    <div>
     
-    <div id="header" style="height: 100vh; backdrop-filter: blur(5px); " >
+    <div id="header" style="height: 100vh;" >
         <div class="container1" >
             <nav  >
                 <img src="collections\img\pracharrverse_logo.png    " class="logo" id="nev_items"></img>
@@ -244,19 +153,6 @@
                     <i class="fas fa-times"></i>
                 </ul>
 
-<!-- -------------------------------------------------------------------------- -->
-
-
-                <!-- <select id="themeSwitcher" style="background-color: transparent;">
-                    <option style="background-color: white;" value="theme-light">Light</option>
-                    <option style="background-color: rgb(22, 22, 19);" value="theme-dark">Dark</option>
-                    <option style="background-color: rgba(83, 44, 160, 0.5)" value="theme-ocean">Ocean</option>
-                    <option style="background-color: #fbf1c7" value="theme-sepia">Sepia</option>
-                </select>
-
-
-
- -->
 
                                 
                 <svg class="toggle-scene" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMinYMin" viewBox="0 0 197.451 481.081" >
@@ -288,7 +184,7 @@
                       <path class="bulb__bulb" stroke-linecap="round" stroke-width="5" d="M-783.192 803.855c5.251 8.815 5.295 21.32 13.272 27.774 12.299 8.045 36.46 8.115 49.127 0 7.976-6.454 8.022-18.96 13.273-27.774 3.992-6.7 14.408-19.811 14.408-19.811 8.276-11.539 12.769-24.594 12.769-38.699 0-35.898-29.102-65-65-65-35.899 0-65 29.102-65 65 0 13.667 4.217 26.348 12.405 38.2 0 0 10.754 13.61 14.746 20.31z"></path>
                       <circle class="bulb__flash" cx="-745.343" cy="743.939" r="83.725" fill="none" stroke-dasharray="10,30" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></circle>
                       <path class="bulb__shine" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M-789.19 757.501a45.897 45.897 0 013.915-36.189 45.897 45.897 0 0129.031-21.957"></path>
-                        </g>
+                    </g>
 
                     
                   </svg>
@@ -309,87 +205,36 @@
         </div>
 
 
-        <div class="heady">
 
-        <div class="head-div" style="margin-top: 10%;"> 
+            <div class="head-div fade-in" style="margin-top: 10%; "> 
             
-            <div class="pracharverse">
-            <span style="font-size: 30px;"class="welcome-text" >Welcome To</span>
-            <h2 data-text="Pracharverse...">Pracharverse...</h2> 
+                <div class="pracharverse">
+                    <h2 data-text="Pracharverse..." class="pracharverse_text">Pracharverse...</h2> 
 
+                    <div class="p_text" style="color: white;"> 
+                        <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
+                            <a class="g-but" href="#">
+                            <span class="g-but-text"> Book a Demo </span>
+                            </a>
+                    </div>  
 
-                          
-        <div class="p_text"> 
-            <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
-                <a class="g-but" href="#">
-                    <span class="g-but-text" id="g-but-id"> Book a Demo </span>
-                    
-                </a>
-            </div>          
+            
+                </div>
             </div>
-
-
-  
-    
-        </div>
         
-
-        
-        <div class="cont">
-            <div class="bubbles">
-                <span class="bub" style="--i:11;"></span>
-                <span class="bub" style="--i:12;"></span>
-                <span class="bub" style="--i:16;"></span>
-                <span class="bub" style="--i:15;"></span>
-                <span class="bub" style="--i:21;"></span>
-                <span  class="bub" style="--i:16;"></span>
-                <span class="bub" style="--i:14;"></span>
-                <span class="bub" style="--i:22;"></span>
-                <span class="bub" style="--i:24;"></span>
-                <span class="bub" style="--i:11;"></span>
-                <span class="bub" style="--i:18;"></span>
-                <span class="bub" style="--i:13;"></span>
-                <span class="bub" style="--i:11;"></span>
-                <span class="bub" style="--i:10;"></span>
-        
-            </div>
-        </div>
-        
-        <div class="head-content" >
-                   <div class="optimize-text"  >
-
-
-                        <h1 style="text-shadow: 2px 4px 20px rgb(0,234,255)" >We Optimize For</h1> 
-                    </div>
-                    <div class="ball" data-splitting  >
-                        <div class="ball-top"></div>
-                    </div>
-                    
-                    <div class="phrase" data-splitting="items">
-                        <span class="word slide" data-splitting="chars" style="color: rgb(0,234,255);">Sales</span>
-                        <span class="word slide" data-splitting="chars" style="color: rgb(0,138,255);">Revenue</span>
-                        <span class="word slide" data-splitting="chars" style="color: rgb(234,0,255);" >Ads</span>
-                        <span class="word slide" data-splitting="chars" style="text-decoration: underline; text-transform: uppercase;">Pracharverse</span>
-                    </div>
-                    
-
-        </div>
-
-
 
        </div>
       
    
-    </div >
-
-
+   
 
 
     
     <!-- -----------------SLIDER--------------- -->
     
-    <div style="height: 100%;" class="slid-vid">
-    <div class="marquee" style="margin-top: 100px; " > 
+    <div style="height: 100vh;" class="slid-vid">
+
+    <div class="marquee" style="" > 
         <ul class="marquee-content">
           <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
           <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
@@ -406,7 +251,7 @@
 
 
     
-    <div>
+    
         <div id="carouselExampleIndicators" class="carousel slide" >
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -415,13 +260,7 @@
             </div>
         <div class="carousel-inner" style="position: relative;">
 
-            <div class="overlay"></div>
-
-            <div class="over-vid" style="position: absolute; z-index: 2;">
-                <div style="display: flex; " class="over-vid-comp">
-                    <h1>Pracharverse</h1><img style="height: 100px; width: 100px;"  src="collections\img\pracharrverse_logo.png    "/>
-                </div>
-            </div>
+            
             <div class="carousel-item active">
                 <video src="collections\vids\production_id_5086601 (2160p).mp4" muted loop autoplay> 
 
@@ -443,14 +282,14 @@
             <span class="visually-hidden">Next</span>
         </button>
         </div>
-    </div>
+    
 
 
 
 
     <!-- -----------------SLIDER--------------- -->
 
-    <div class="marquee"  >
+    <div class="marquee">
         <ul class="marquee-content">
           <li><i class="fa fa-telegram" aria-hidden="true"></i></li>
           <li><i class="fa fa-wordpress" aria-hidden="true"></i></li>
@@ -465,7 +304,6 @@
         </ul>
       </div>
 
-    
     </div>
 
     
@@ -475,12 +313,13 @@
 
     
 
-    <div  id="service_div" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 100px;" >
-        <h1  class="sub-title" style="font-family: 'Playfair Display', serif;" >Our Services</h1>
-    <p class="service-text" style="font-family: 'Playfair Display', serif; text-align: center; width: 70%;">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores blanditiis incidunt architecto tenetur magni dolore similique non, atque hic aspernatur explicabo repudiandae cumque error in! Aperiam illum ducimus explicabo vitae."</p>
-    </div>
+        <div  id="service_div" style=" height: 50rem;" >
+            <!-- <h1  class="sub-title" style="font-family: 'Playfair Display', serif; " >Our Services</h1> -->
 
-    <iframe src="tempo.html" style="height: 100vh; width: 100%; overflow: hidden; "></iframe>
+            <iframe src="tempo.html" style="height: 100%; width: 100%; overflow-x: hidden; "></iframe>
+
+        </div>
+
 
 
 
@@ -490,28 +329,30 @@
 
     
         <!-- ---------------------CONTENT------------------ -->
-        <div class="content_box"  id="about_div" >
+        <div class="content_box"  id="about_div"  style=" height: 100vh; ">
             <div class="buss_image">
                 <img src="collections\img\temoImg.png"  />
             </div>
     
             <div class="buss_text">
-                
-                <h3>Grow Your Business With Our & <h3 style="color: #ff004f; display: inline;">Creativity</h3> <h3 style="display: inline; margin-left: 5px;"> And</h3> <h3 style="color:#ff004f; display: inline; margin-left: 5px;">Strategies</h3> </h3>
+                <div class="content_div">
+                <h3>Grow Your Business With Our & Creativity And Strategies</h3>
                 <p class="buss_text-p"> "Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."</p>
                 <div class="cont_count">
                     <div class="count-1"> 
-                        <h1>15+</h1>
+                        <h1 id="value">15<span>+</span></h1>
                         <p>Happy CLIENTLE</p>
                     </div>
 
                     <div class="count-1">
-                        <h1>1500+</h1>
+                        <h1 id="value2">1500<span>+</span></h1>
                         <p>Creatives created</p>
-                    </div>
-                    <div class="count-1">
-                        <h1>2X</h1>
+                    </div> <div class="count-1">
+                        <h1 id="value">2X</h1>
                         <p>Business growth</p>
+                    </div>
+                   
+
                     </div>
                 </div>
             </div>
@@ -521,21 +362,20 @@
      
 
 
-    <iframe src="Carousel.html" style="height: 100vh; width: 100%; overflow: hidden; "  id="case_div"></iframe>
-
+    <iframe src="Carousel.html" style="height: 100vh; width: 100%; overflow: hidden; background-color: rgb(22, 22, 19);"  id="case_div"></iframe>
 
 
 
     <iframe src="portfolio.html" style="height: 100vh; width: 100%; overflow: hidden;" id="port_div"></iframe>
 
+    <!-- background-image: url('collections/img/top-view-blue-monday-concept-composition-with-telephone.jpg'); -->
 
-
-    <div id="contact_div">
-        <section class="contact" id="contact">
+    <div id="contact_div" style="height: 100vh; ">
+        <section class="contact" id="contact" >
         <div class="container">
             <div class="heading text-center">
-                <h2>Contact
-                    <span> Us </span></h2>
+                <h1 style="color: hsl(260 97% 61% / 0.75); font-weight: bold; font-size: 230%;">Contact 
+                    <span> Us </span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     <br>incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -580,11 +420,11 @@
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="number" class="form-control" placeholder="Phone No">
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                            <input class="form-control"  type="url"  id="comment" placeholder="Website/social Link" />
                         </div>
                         <button class="btn btn-block" type="submit">Send Now!</button>
                     </form>
@@ -699,7 +539,6 @@
 
 
     </div>
-    </div>
     
 
 
@@ -734,30 +573,30 @@
 
         
             const moonIcon = document.querySelector('.toggle-scene');
-             
+
+            const home_para = document.querySelector('.p_text');
+
              let isNightTheme = true;
      
              moonIcon.addEventListener('click', () => {
                  const body = document.body;
                  const nev_items=document.querySelectorAll("nav ul li a");
-                 const head = document.querySelector('#header');
-                
                  if (isNightTheme) {
                      body.style.backgroundColor = 'white'; // Day theme background color
                      body.style.color = 'black'; // Day theme text color
                      body.style.transition='background-color 0.5s, color 0.5s';
-                     head.style.backgroundColor = '#e2eafc';
                      moonIcon.style.color = '#f1c40f'; // Icon color
-
+                     home_para.style.color = "black";
+                     
                      nev_items.forEach((e)=>{
                          e.style.color='black';
                      });
                      
                  } else {
-                     body.style.backgroundColor = 'rgb(22, 22, 19)'; // Night theme background color
+                     body.style.backgroundColor = '#000000'; // Night theme background color
                      body.style.color = 'white'; // Night theme text color
                      moonIcon.style.color = 'white'; // Icon color
-                     head.style.backgroundColor = '#001427';
+                     home_para.style.color = "rgb(144, 143, 143)";
 
                      nev_items.forEach((e)=>{
                          e.style.color='white';
@@ -781,6 +620,102 @@ document.querySelector('a[href="#port_div"]').addEventListener('click', function
     });
   });
 </script>
+
+
+
+<script>
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const numericPart = obj.firstChild; // Get the numeric part
+      const plusSign = obj.querySelector('span');
+  
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        numericPart.textContent = Math.floor(progress * (end - start) + start);
+  
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          numericPart.textContent = end;
+        }
+      };
+  
+      window.requestAnimationFrame(step);
+    }
+  
+    const obj = document.getElementById("value");
+    const intValue = parseInt(obj.textContent, 10);
+
+    
+        document.addEventListener('scroll', function () {
+            // Check if the h1 is in the viewport
+            const rect = obj.getBoundingClientRect();
+            const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+            if (inViewport) {
+                // If it's in the viewport, start the animation
+                animateValue(obj, 0, intValue, 5000);
+            }
+        });
+  
+</script>
+
+
+<script>
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const numericPart = obj.firstChild; // Get the numeric part
+      const plusSign = obj.querySelector('span');
+  
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        numericPart.textContent = Math.floor(progress * (end - start) + start);
+  
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          numericPart.textContent = end;
+        }
+      };
+  
+      window.requestAnimationFrame(step);
+    }
+  
+    const ob = document.getElementById("value2");
+
+        document.addEventListener('scroll', function () {
+            // Check if the h1 is in the viewport
+            const rect = obj.getBoundingClientRect();
+            const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+            if (inViewport) {
+                // If it's in the viewport, start the animation
+                animateValue(ob, 0, 1500, 5000);
+            }
+        });
+
+</script>
+
+    
+
+
+<script>
+    const sections = document.querySelectorAll('.service_div');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-visible');
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 
 
 </body>
