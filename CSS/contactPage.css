@@ -29,7 +29,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #ffffff;
+  color: #626262;;
   margin: 20px 0 60px;
   padding: 0;
 }
@@ -38,7 +38,7 @@
   padding: 25px;
   font-size: 13px;
   margin-bottom: 10px;
-  background: #f9f9f9;
+  background: #eeecec;
   border: 0;
   border-radius: 10px;
 }
@@ -48,7 +48,7 @@
   border-radius: 10px;
   font-size: 15px;
   background:  hsl(260 97% 61% / 0.75);
-  color: #ffffff;
+  color: white;
 }
 
 .contact .title h3 {
@@ -60,7 +60,7 @@
 .contact .title p {
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: #626262;;
   line-height: 1.6;
   margin: 0 0 40px;
 }
@@ -85,5 +85,5 @@
 .contact .content .info h4 span {
   font-size: 13px;
   font-weight: 300;
-  color: #ffffff;
+  color: #626262;;
 }
