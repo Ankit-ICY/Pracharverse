@@ -37,24 +37,20 @@ html {
   }
 }
 
-body {
-  color: #fff;
-  padding: 3rem;
-}
+
 @media only screen and (max-width: 1000px) {
   body {
     padding: 0;
   }
 }
 
-.container {
+.container2 {
   position: relative;
   overflow: hidden;
-  border-radius: 5rem;
   
 }
 @media only screen and (max-width: 1000px) {
-  .container {
+  .container2 {
     border-radius: 0;
   }
 }
@@ -62,9 +58,10 @@ body {
 .slider {
   display: flex;
   width: 500%;
-  height: 45rem;
+  height: 80rem;
   transition: all 0.25s ease-in;
   transform: translateX(0);
+  overflow: hidden;
 }
 @media only screen and (max-width: 1000px) {
   .slider {
@@ -88,7 +85,8 @@ body {
 }
 .slider .box .bg {
   padding: 2rem;
-  /* background-color:  rgb(10,0,30); */
+  background-color: rgba(0, 0, 0, 0.2);
+
   /* background-image: linear-gradient(rgb(0,234,255), rgb(0,138,255) , rgb(234,0,255)); */
   width: 55%;
   transform: skewX(7deg);
@@ -150,7 +148,7 @@ body {
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: rgb(110, 107, 107);
+  color:white
 }
 .slider .box .details p {
   display: inline-block;
@@ -158,7 +156,7 @@ body {
   /* color: #B5B4B4; */
   margin-bottom: 2rem;
   margin-right: 5rem;
-  color: rgb(110, 107, 107);
+  color: white;
 
 
 
@@ -185,7 +183,7 @@ body {
   border: none;
 }
 .slider .box1 {
-  /* background-color: #500033; */
+  background-color: #500033;
 }
 .slider .box1 .illustration .inner {
   background-color: #FF0077;
@@ -197,7 +195,7 @@ body {
   background-color: #FF0077;
 }
 .slider .box2 {
-  /* background-color: #000050; */
+  background: linear-gradient(#feda75 , #fa7e1e , #d62976,#962fbf , #4f5bd5);
 }
 .slider .box2 .illustration .inner {
   background-color: #0033FF;
@@ -209,7 +207,7 @@ body {
   background-color: #0033FF;
 }
 .slider .box3 {
-  /* background-color: #00501D; */
+  background-color: #1DA1F2;
 }
 .slider .box3 .illustration .inner {
   background-color: #00FF44;
@@ -221,7 +219,7 @@ body {
   background-color: #00FF44;
 }
 .slider .box4 {
-  /* background-color: #554D00; */
+  background-color: rgb(24, 119, 242);
 }
 .slider .box4 .illustration .inner {
   background-color: #FF4E00;
@@ -233,7 +231,7 @@ body {
   background-color: #FF4E00;
 }
 .slider .box5 {
-  /* background-color: #300050; */
+  background: linear-gradient(#075e54,  #128c7e , #25d366,#dcf8c6);
 }
 .slider .box5 .illustration .inner {
   background-color: #8000FF;
@@ -303,7 +301,7 @@ body {
   transition: all 0.3s ease;
 }
 @media only screen and (max-width: 650px) {
-  .prev,
+  .prev,  
 .next {
     display: none;
   }
