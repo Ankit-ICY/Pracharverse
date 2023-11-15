@@ -247,9 +247,9 @@ transform: translateX(0);
     letter-spacing: 4px;
     overflow: hidden;
    border-radius: 15px;
-  width: 25%;
+  width: 24%;
    
-   color:#760303;
+   color:#5c0000;
 
    font-family: 'Open Sans', sans-serif;
    letter-spacing: 3px;
@@ -257,7 +257,7 @@ transform: translateX(0);
    text-transform: uppercase;
 }
 .g-but:hover{
-    background-image: linear-gradient(rgb(0,234,255), rgb(0,138,255) , rgb(234,0,255));
+    background-color: rgb(255, 255, 255);
     color: #050801;
 
      /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);/ */
