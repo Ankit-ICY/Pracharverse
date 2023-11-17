@@ -51,13 +51,13 @@
   color: white;
 }
 
-.contact .title h3 {
+.contact .titled h3 {
   font-size: 18px;
-  color: white;
+  color: hsl(260 97% 61% / 0.75);
   font-weight: 600;
 }
 
-.contact .title p {
+.contact .titled p {
   font-size: 14px;
   font-weight: 400;
   color: #626262;;
