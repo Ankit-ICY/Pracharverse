@@ -15,7 +15,8 @@
     <link rel="icon" href="collections\img\pracharrverse_logo.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="collections\img\pracharrverse_logo.png">
 
-
+    <link rel="stylesheet/less" type="text/css" href="CSS/text.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/animate.css">
     <link rel="stylesheet" href="CSS/aura.css">
@@ -64,7 +65,7 @@
         letter-spacing: 1px;
     }
 
-
+/* 
 
     h2{
         position: relative;
@@ -72,9 +73,7 @@
         color: transparent;
         -webkit-text-stroke: 0.3vw #383d52;
         font-weight: bold;
-
-       
-    }
+    } */
     h2::before{
         content: attr(data-text);
         position: absolute;
@@ -124,9 +123,26 @@
 
     @media screen and (max-width:600px){
 
+        .optimize_div{
+            /* background-color: red; */
+            width: 100%;
+            height: 40%;
+        }
 
-        .pracharverse_text{
-            font-size: 12vw;
+        .more{
+            font-size: 8vw;
+        }
+
+        .ot_text{
+            font-size: 5vw;
+        }
+
+
+        #slide_text{
+
+            font-size: 8vw;
+            
+
         }
 
          }
@@ -137,7 +153,7 @@
 
 <body >
 
-    <div>
+
     
     <div id="header" style="height: 100vh;" >
         <div class="container1" >
@@ -205,24 +221,66 @@
 
 
 
-            <div class="head-div fade-in" style="margin-top: 10%; "> 
+            <div class="head-div fade-in" style="margin-top: 4%;" > 
             
-                <div class="pracharverse">
-                    <h2 data-text="Pracharverse..." class="pracharverse_text">Pracharverse...</h2> 
+                <div class="pracharverse" >
 
-                    <div class="p_text" style="color: white;"> 
-                        <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
-                            <a class="g-but" href="#">
-                            <span class="g-but-text"> Book a Demo </span>
-                            </a>
-                    </div>  
+
+                    <div class="optimize_div" > 
+                        <h1 data-text="WE OPTIMIZE FOR" class="ot_text" >WE OPTIMIZE FOR</h1>
+                        
+                    <div class="more_div" > 
+                            <span class="more" >MORE</span>
+                                <div class="title">
+                                  <div class="word can">
+                                    <span>S</span>
+                                    <span>A</span>
+                                    <span>L</span>
+                                    <span>E</span>
+                                    <span>S</span>
+
+                                  </div>
+                                  <div class="word will">
+                                    <span>A</span>
+                                    <span>D</span>
+                                    <span>S</span>
+                                  </div>
+                                  <div class="word thrive">
+                                    <span>P</span>
+                                    <span>R</span>
+                                    <span>O</span>
+                                    <span>F</span>
+                                    <span>I</span>
+                                    <span>T</span>
+                                </div>
+                            </div>
+                
+                        </div>
+    
+                      
+                 
+
+                        <span id="hero-it-text"   class="PageBackToWork-heading-itText" style="height: 0px; font-size: 0px;"></span>
+
+                    
+                    </div>
+
+                            <div class="p_text" style="color: white; " >  
+                                <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
+                                <a class="g-but" href="#" style="border: 1px solid white;">
+                                <span class="g-but-text"> Book a Demo </span>
+                                </a>
+                            </div>  
+
+
+                    </div>
 
             
-                </div>
+                      </div>
             </div>
         
 
-       </div>
+      
       
    
    
@@ -380,7 +438,7 @@
 
     <!-- background-image: url('collections/img/top-view-blue-monday-concept-composition-with-telephone.jpg'); -->
 
-    <div id="contact_div" style="height: 100vh; ">
+    <div id="contact_div" style="height: 100%; ">
         <section class="contact" id="contact" >
         <div class="container">
             <div class="heading text-center">
@@ -518,21 +576,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                <div class="footer-widget">
-                                    <div class="footer-widget-heading">
-                                        <h3>Subscribe</h3>
-                                    </div>
-                                    <div class="footer-text mb-25">
-                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                                    </div>
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="text" placeholder="Email Address">
-                                            <button><i class="fab fa-telegram-plane"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
+                           
                             </div>
                         </div>
                     </div>
@@ -567,6 +611,8 @@
         <script  src="js/script.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/slider2.js"></script>
+        <script src="js/text.js"></script>
+
 
          <script type="module" src="js/animate.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
