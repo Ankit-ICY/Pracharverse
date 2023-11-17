@@ -882,10 +882,9 @@ body{
         display: none;
     }
 
-    body{
-        overflow-y: hidden;
-    }
-    
+	body{
+		overflow-x : hidden;
+	}
 
         
     .g-but{
