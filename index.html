@@ -44,6 +44,7 @@
 
 
     .pracharverse{
+        margin-top: 4%;
         height: 100%;
         width: 100%;
         display: flex;
@@ -58,7 +59,7 @@
         margin-left: 1%;
         font-size: 14px;
         text-align: center;
-        
+        margin-top: 3%;
         font-family: 'Open Sans', sans-serif;
         letter-spacing: 1px;
     }
@@ -118,6 +119,16 @@
        
     }
 
+    .arrow{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 5%;
+        margin-top: 4%;
+        position: absolute;
+        z-index: 2;
+    }
+
 
     @media screen and (max-width:600px){
 
@@ -156,8 +167,8 @@
 
 
     
-    <div id="header" style="height: 100vh;" >
-        <div class="container1" >
+    <div id="header" style="height: 100vh; " >
+        <div class="container1"  >
             <nav  >
                 <img src="collections\img\pracharrverse_logo.png    " class="logo" id="nev_items"></img>
                 <ul>
@@ -222,9 +233,9 @@
 
 
 
-            <div class="head-div fade-in" style="margin-top: 4%;" > 
+            <div class="head-div fade-in" style="margin-top: 4%; height: 60%;"  > 
             
-                <div class="pracharverse" >
+                <div class="pracharverse"  >
                     <!-- <h2 data-text="Pracharverse..." class="pracharverse_text">Pracharverse...</h2>  -->
 
 
@@ -273,7 +284,7 @@
                     
                     </div>
 
-                            <div class="p_text" style="color: white; " >  
+                            <div class="p_text" style="color: white;"  >  
                                 <p>"Welcome to Prachar Verse, your gateway to innovative digital marketing solutions. Founded by visionary Aman, our agency thrives on transforming brands into captivating stories. Aman's strategic genius fuels our success, pioneering unique campaigns that resonate. Join us in crafting digital narratives that inspire, convert, and endure."   </p>
                                 <a class="g-but" href="#" style="border: 1px solid white;">
                                 <span class="g-but-text"> Book a Demo </span>
@@ -281,10 +292,20 @@
                             </div>  
 
 
+
                     </div>
 
-            
+
+
                       </div>
+
+
+                    <div class="arrow" id="section04" >
+                        <a href="#logos_div" > <span></span></a> 
+                    </div>
+
+
+
             </div>
         
 
@@ -297,7 +318,7 @@
     
     <!-- -----------------SLIDER--------------- -->
     
-    <div style="height: 100vh;" class="slid-vid">
+    <div style="height: 100vh; " class="slid-vid" id="logos_div" >
 
     <div class="marquee"  > 
         <ul class="marquee-content">
@@ -391,7 +412,9 @@
         <div  id="service_div" style=" height: 50rem;" >
             <!-- <h1  class="sub-title" style="font-family: 'Playfair Display', serif; " >Our Services</h1> -->
 
-            <iframe src="tempo.html" style="height: 100%; width: 100%; overflow-x: hidden; "></iframe>
+            <iframe id="myIframe" src="tempo.html" style="height: 100%; width: 100%; overflow-x: hidden; position: relative; "></iframe>
+
+  
 
         </div>
 
@@ -788,6 +811,24 @@ document.querySelector('a[href="#port_div"]').addEventListener('click', function
       observer.observe(section);
     });
   </script>
+
+
+
+<script>
+    // Function to handle scrolling to #aboutDiv in the main file
+    function scrollToAboutDiv() {
+        var aboutDiv = document.getElementById('about_div');
+        aboutDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Listen for postMessage from the iframe
+    window.addEventListener('message', function(event) {
+        if (event.data === 'scrollToAboutDiv') {
+            scrollToAboutDiv();
+        }
+    });
+</script>
+
 
 
 </body>
