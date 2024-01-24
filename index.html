@@ -695,42 +695,44 @@ document.querySelector('a[href="#port_div"]').addEventListener('click', function
 
 
 <script>
-    function animateValue(obj, start, end, duration) {
-      let startTimestamp = null;
-      const numericPart = obj.firstChild; // Get the numeric part
-      const plusSign = obj.querySelector('span');
-  
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        numericPart.textContent = Math.floor(progress * (end - start) + start);
-  
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        } else {
-          numericPart.textContent = end;
-        }
-      };
-  
-      window.requestAnimationFrame(step);
+  function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const numericPart = obj.firstChild; // Get the numeric part
+    const plusSign = obj.querySelector('span');
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      numericPart.textContent = Math.floor(progress * (end - start) + start);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        numericPart.textContent = end;
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  }
+
+  const obj = document.getElementById("value");
+  const intValue = parseInt(obj.textContent, 10);
+  let animationT = false;
+
+  document.addEventListener('scroll', function () {
+    if (!animationT) {
+      const rect = obj.getBoundingClientRect();
+      const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+      if (inViewport) {
+        // If it's in the viewport and animation has not been triggered yet, start the animation
+        animateValue(obj, 0, intValue, 5000);
+        animationT = true; // Set the flag to true to prevent further triggering
+      }
     }
-  
-    const obj = document.getElementById("value");
-    const intValue = parseInt(obj.textContent, 10);
-
-    
-        document.addEventListener('scroll', function () {
-            // Check if the h1 is in the viewport
-            const rect = obj.getBoundingClientRect();
-            const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-            if (inViewport) {
-                // If it's in the viewport, start the animation
-                animateValue(obj, 0, intValue, 5000);
-            }
-        });
-  
+  });
 </script>
+
 
 
 <script>
@@ -754,20 +756,23 @@ document.querySelector('a[href="#port_div"]').addEventListener('click', function
       window.requestAnimationFrame(step);
     }
   
-    const ob = document.getElementById("value2");
-
-        document.addEventListener('scroll', function () {
-            // Check if the h1 is in the viewport
-            const rect = obj.getBoundingClientRect();
-            const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-            if (inViewport) {
-                // If it's in the viewport, start the animation
-                animateValue(ob, 0, 1500, 5000);
-            }
-        });
-
-</script>
+    let animationTriggered = false;
+  
+    document.addEventListener('scroll', function () {
+      if (!animationTriggered) {
+        const ob = document.getElementById("value2");
+        const rect = ob.getBoundingClientRect();
+        const inViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+  
+        if (inViewport) {
+          // If it's in the viewport and animation has not been triggered yet, start the animation
+          animateValue(ob, 0, 1500, 5000);
+          animationTriggered = true; // Set the flag to true to prevent further triggering
+        }
+      }
+    });
+  </script>
+  
 
     
 
